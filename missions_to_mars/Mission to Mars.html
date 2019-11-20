@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./Mission to Mars_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head> 
+<body class="text-blue" style="background-color: white;">
+    <div class="container">
+        
+        <div class="jumbotron text-center" style="background-image: url(https://cdn.mos.cms.futurecdn.net/U5Ws8AHMqEhcRnu6KDSxZi-1024-80.jpg); height: 400px; background-position: center; background-size: cover;">
+            <h1 class="display-3"><b>Mission to Mars</b></h1>
+            <p><a class="btn btn-danger btn-lg" href="http://127.0.0.1:5000/scrape" role="button">Scrape New Data</a></p>
+        </div>
+        <!-- NASA Mars News -->
+        <div class="container">
+            <div class="row" id="mars-news">
+                <div class="media">
+                    <div class="media-body">
+                        <h4>Latest Mars News</h4>
+                        <h5 style="color: #DC143C">NASA's Mars 2020 Heads Into the Test Chamber</h5>
+                        <p style="color: #8B0000">In this time-lapse video taken at JPL, engineers move the Mars 2020 rover into a large vacuum chamber for testing in Mars-like environmental conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!-- JPL Mars Space Images - Featured Image -->
+        <div class="container">
+            <div class="row" id="mars-featured-image">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                <h4>Featured Mars Image</h4>
+                    <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
+                    <img src="./Mission to Mars_files/PIA19113_hires.jpg" class="img-responsive" style="max-width:100%; max-height: auto;" alt="Mars Featured Image">
+                </div>
+                <!-- Mars Weather -->
+                <div class="col-lg-4 col-md-4 col-sm-12" id="mars-weather">
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-body text-white bg-danger">
+                            <h4 class="card-title">Current Weather on Mars</h4>
+                            <p class="card-text">InSight sol 336 (2019-11-06) low -101.4ºC (-150.6ºF) high -24.0ºC (-11.2ºF)
+winds from the SSE at 4.7 m/s (10.6 mph) gusting to 18.7 m/s (41.9 mph)
+pressure at 6.90 hPapic.twitter.com/RIAb2fzSY4</p>
+                        </div>
+                    </div>
+                    <!-- Mars Facts -->
+                    <br>
+                    <div class="row" id="mars-facts">
+                        <div class="col-md-12">
+                            <h4>Mars Facts</h4>
+                            <p class="card-text"></p><table border="1" class="dataframe table table-hover table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Parameter</th>
+      <th>Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Equatorial Diameter:</td>
+      <td>6,792 km</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Polar Diameter:</td>
+      <td>6,752 km</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mass:</td>
+      <td>6.39 × 10^23 kg (0.11 Earths)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Moons:</td>
+      <td>2 (Phobos &amp; Deimos)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Orbit Distance:</td>
+      <td>227,943,824 km (1.38 AU)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Orbit Period:</td>
+      <td>687 days (1.9 years)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Surface Temperature:</td>
+      <td>-87 to -5 °C</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>First Record:</td>
+      <td>2nd millennium BC</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Recorded By:</td>
+      <td>Egyptian astronomers</td>
+    </tr>
+  </tbody>
+</table><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mars Hemispheres -->
+        <h4 style="padding-top: 50px; margin-top: 100px; text-align: center;">Mars Hemispheres</h4>
+        <div class="card-deck">
+            <hr>
+            <div class="col-md-12">
+                <div class="row" id="mars-hemispheres">
+                    
+                    <div class="col-md-6">
+                        <div class="card text-white bg-danger" style="margin: 30px;">
+                            <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
+                            <img class="card-img-top" src="./Mission to Mars_files/full.jpg" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Cerberus Hemisphere Enhanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card text-white bg-danger" style="margin: 30px;">
+                            <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
+                            <img class="card-img-top" src="./Mission to Mars_files/full(1).jpg" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Schiaparelli Hemisphere Enhanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card text-white bg-danger" style="margin: 30px;">
+                            <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
+                            <img class="card-img-top" src="./Mission to Mars_files/full(2).jpg" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Syrtis Major Hemisphere Enhanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card text-white bg-danger" style="margin: 30px;">
+                            <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
+                            <img class="card-img-top" src="./Mission to Mars_files/full(3).jpg" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Valles Marineris Hemisphere Enhanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <!-- jQuery, Popper.js & Bootstrap JS -->
+    <script src="./Mission to Mars_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./Mission to Mars_files/popper.min.js.download" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./Mission to Mars_files/bootstrap.min.js.download" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body></html>
